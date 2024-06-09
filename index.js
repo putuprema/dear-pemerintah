@@ -1,5 +1,5 @@
 window.addEventListener("load", (event) => {
-  gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+  gsap.registerPlugin(ScrollTrigger);
 
   document.querySelector("main").style.opacity = 1;
 
