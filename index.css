@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "SF-Pro";
+  src: url("/fonts/SF-Pro-Text-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF-Pro";
+  src: url("/fonts/SF-Pro-Text-RegularItalic.otf") format("opentype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "SF-Pro";
+  src: url("/fonts/SF-Pro-Text-Bold.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF-Pro";
+  src: url("/fonts/SF-Pro-Text-BoldItalic.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  font-family: "SF-Pro";
+  background: black;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+main {
+  scroll-snap-type: y mandatory;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: white;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+  padding: 10px;
+  scroll-snap-align: start;
+}
+
+.text-container {
+  max-width: 1000px;
+}
+
+#dear-govt-2,
+#dear-govt-3,
+.closing {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.law-container h4 {
+  text-align: center;
+}
+
+.law-container img {
+  margin-bottom: 1rem;
+}
