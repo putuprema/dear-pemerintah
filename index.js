@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", (event) => {
+window.addEventListener("load", (event) => {
   gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
   document.querySelector("main").style.opacity = 1;
