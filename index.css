@@ -7,8 +7,12 @@ section {
   align-items: center;
   position: relative;
   box-sizing: border-box;
-  padding: 10px;
+  padding: 32px;
   scroll-snap-align: start;
+}
+
+.panel {
+  padding: 32px;
 }
 
 .text-container {
@@ -19,7 +23,14 @@ section {
 #dear-govt-3,
 .closing {
   overflow: hidden;
-  white-space: nowrap;
+}
+
+@media (min-width: 1199px) {
+  #dear-govt-2,
+  #dear-govt-3,
+  .closing {
+    white-space: nowrap;
+  }
 }
 
 .law-container h4 {
@@ -29,4 +40,21 @@ section {
 .law-container img {
   margin-bottom: 1rem;
   aspect-ratio: auto 358 / 262;
+  width: 100%;
+}
+
+#dangerous-law > div {
+  max-width: 1500px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 24px;
+  row-gap: 24px;
+}
+
+@media (max-width: 1199px) {
+  #dangerous-law > div {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
