@@ -264,6 +264,6 @@ window.addEventListener("load", (event) => {
 });
 
 // On reload, scroll position needs to be reset, otherwise there will be bug in the GSAP timeline.
-window.addEventListener("unload", (event) => {
+window.addEventListener("pagehide", (event) => {
   window.scrollTo({ top: 0, behavior: "instant" });
 });
