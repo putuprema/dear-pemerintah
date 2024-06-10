@@ -28,4 +28,5 @@ section {
 
 .law-container img {
   margin-bottom: 1rem;
+  aspect-ratio: auto 358 / 262;
 }
