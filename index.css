@@ -1,18 +1,20 @@
 section {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
   box-sizing: border-box;
-  padding: 32px;
-  scroll-snap-align: start;
+  padding-left: 32px;
+  padding-right: 32px;
+  overflow-x: hidden;
 }
 
 .panel {
-  padding: 32px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .text-container {
@@ -56,5 +58,50 @@ section {
 @media (max-width: 1199px) {
   #dangerous-law > div {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.law-detail-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.law-detail-explanation {
+  position: relative;
+  max-width: 360px;
+  margin-left: 64px;
+}
+
+.law-detail-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 575px) {
+  .law-detail-container {
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+  }
+
+  .law-detail-explanation {
+    margin-left: 0;
+  }
+
+  .law-detail-container > .law-container > div:nth-child(1) {
+    display: none;
+  }
+
+  .law-detail-container > .law-container > div:nth-child(2) {
+    text-align: left !important;
+    margin-bottom: 1rem;
+  }
+
+  .law-detail-title {
+    align-items: start;
+    justify-content: start;
   }
 }
